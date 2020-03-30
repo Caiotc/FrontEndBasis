@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Contato - Barbearia</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="./style.css">
@@ -38,20 +39,19 @@
                 <textarea cols="30" rows="10" id="mensagem"class="input-padrao" required></textarea>
                 <fieldset>
                     <legend>Como prefere nosso contato?</legend>
-                    <label for="radio-email"> <input type="radio" value="email" name ="contato" id="radio-email">
-                        Email</label>   
-                    <label for="radio-telefone"><input type="radio" value = "telefone" name ="contato" id="radio-telefone">
-                        Telefone</label>                    
-                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" name ="contato" id="radio-whatsapp" checked>
-                        Whatsapp</label>                                       
+                    <label for="radio-email"> <input type="radio" value="email" name ="contato" id="radio-email">Email</label>   
+                    <label for="radio-telefone"><input type="radio" value = "telefone" name ="contato" id="radio-telefone">Telefone</label>                    
+                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" name ="contato" id="radio-whatsapp" checked>Whatsapp</label>                                       
                 </fieldset>
                 <fieldset>
                 <legend>Qual Horario prefere ser atendido?</legend>
-                    <select>
-                        <option value="">Manhã</option>
-                        <option value="">Tarde</option>
-                        <option value="">Noite</option>
-                    </select>
+                    <div class="seletor">
+                        <select>
+                            <option value="">Manhã</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noite</option>
+                        </select>
+                    </div>
                 </fieldset>
                 <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
                 <input type="submit" value="Enviar Formulário" class="enviar">
